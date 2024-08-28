@@ -1,4 +1,4 @@
-# UVU_DAGV1200_Fall_2024
+# DAGV1200_Fall_2024_UVU
 3D Modeling in Maya
 
 Mercedes Nazer
