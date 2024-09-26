@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: bedroom_cornerroom.ma
-//Last modified: Fri, Sep 20, 2024 11:16:06 PM
+//Last modified: Sat, Sep 21, 2024 09:02:49 PM
 //Codeset: 1252
 requires maya "2024";
 requires "stereoCamera" "10.0";
@@ -14,7 +14,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Pro v2009 (Build: 22631)";
-fileInfo "UUID" "DBE88553-48A5-C55C-F594-B897AECFB279";
+fileInfo "UUID" "0C8B1520-4BC6-B9CB-6D49-ADB260AE9367";
 createNode transform -s -n "persp";
 	rename -uid "6F184219-4772-9F92-85E2-41BECC99D857";
 	setAttr ".v" no;
@@ -10370,20 +10370,20 @@ createNode camera -n "finalShape" -p "final";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5D02D971-4C19-102C-3403-BA866B77A9F8";
+	rename -uid "51ED0E41-47FA-57CF-C686-DEBE3826DE6F";
 	setAttr -s 19 ".lnk";
 	setAttr -s 19 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0B0B4585-413F-27EC-4C88-44B25CC7934D";
+	rename -uid "30D45A30-4408-F775-EC29-DDB1D59DDD57";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "064D2277-4B57-2003-5786-7596CDB3906E";
+	rename -uid "065D2189-4439-0B9C-435C-439C5D68D2A0";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4FE9E017-4073-F33C-4C4E-B5A1FEB0C12B";
+	rename -uid "9D495FE3-4071-8057-8364-0398D39D81FB";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F34E3574-4F37-3950-E6B9-A9952ED349B9";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "8B76F2D6-438A-9A32-933E-AE885B70D907";
+	rename -uid "495B3156-4688-2A92-CF94-42B07E164DF6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "A267E356-48A1-B653-8180-D79DF78DB5D2";
 	setAttr ".g" yes;
@@ -14323,7 +14323,7 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[4].y" 3285.71435546875;
 	setAttr ".tgi[0].ni[4].nvs" 1923;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "8B128CFE-48BF-D765-B2B9-68BF88658B3F";
+	rename -uid "27345015-494D-7064-C7BD-778EE13E5270";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 78;
@@ -14374,6 +14374,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "polyCube1.out" "baseShape.i";
 connectAttr "groupId43.id" "wallShape.iog.og[0].gid";
 connectAttr "lambert2SG.mwc" "wallShape.iog.og[0].gco";
